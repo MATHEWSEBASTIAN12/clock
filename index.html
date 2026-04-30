@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Clock Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+    <div class="top-bar">
+        <h2 id="greeting">Good Morning</h2>
+        <button onclick="toggleTheme()">🌗</button>
+    </div>
+
+    <div class="main-grid">
+
+        <!-- Digital -->
+        <div class="card">
+            <div class="clock" id="clock">00:00:00</div>
+            <div id="date"></div>
+        </div>
+
+        <!-- Analog -->
+        <div class="card analog">
+            <div class="analog-clock">
+                <div class="hand hour" id="hour"></div>
+                <div class="hand minute" id="minute"></div>
+                <div class="hand second" id="second"></div>
+                <div class="center-dot"></div>
+            </div>
+        </div>
+
+        <!-- World Clock -->
+        <div class="card">
+            <h3>World Clock</h3>
+            <div id="worldClocks"></div>
+        </div>
+
+        <!-- Alarm -->
+        <div class="card">
+            <h3>Set Alarm</h3>
+            <input type="time" id="alarmTime">
+            <button onclick="setAlarm()">Set</button>
+            <p id="alarmStatus"></p>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
